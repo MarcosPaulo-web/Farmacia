@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "TBPRODUTOS")
-public class Produtos {
+public class ProdutosModel {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cdProduto")// para indentificar que é id
     private Integer cdProduto;
