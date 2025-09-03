@@ -17,11 +17,11 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api/v1/Empresas")
+@RequestMapping("/api/v1/empresas")
 public class EmpresaController {
 
     @Autowired
-    EmpresaRespository empresaRespository;
+    private EmpresaRespository empresaRespository;
 
     @PostMapping
     public ResponseEntity<EmpresaModel> salvar(@RequestBody @Valid EmpresaDto empresaDto) {
