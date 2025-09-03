@@ -18,7 +18,7 @@ import java.util.Optional;
 @RequestMapping("/api/v1/produtos")
 public class ProdutosController {
 
-    @Autowired
+    @Autowired  // faz a injeção automática de dependência (Spring cria e fornece o objeto)
     private ProdutosRepository produtosRepository;
 
     @PostMapping

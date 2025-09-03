@@ -5,9 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
+@NoArgsConstructor   // gera automaticamente um construtor vazio (sem parâmetros)
+@AllArgsConstructor  // gera automaticamente um construtor com todos os atributos
+@Data                // gera getters, setters, toString, equals, hashCode e construtor para atributos finais
+
 
 @Entity
 @Table(name = "TBPRODUTOS")
